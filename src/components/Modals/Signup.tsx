@@ -9,6 +9,7 @@ type SignupProps = {
 };
 
 const Signup:React.FC<SignupProps> = () => {
+
     const setAuthModalState = useSetRecoilState(authModalState)
     const handleChangeInput = (e:React.ChangeEvent<HTMLInputElement>) => {
         setInputs((prev) => ({...prev,[e.target.name]:e.target.value}));
@@ -32,16 +33,16 @@ const Signup:React.FC<SignupProps> = () => {
 
     const handleRegister = async(e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        if (!inputs.email || !inputs.password || !inputs.displayName) return alert('Please fill all the fields');
         try{
             const newUser = await createUserWithEmailAndPassword(inputs.email,inputs.password);
             if(!newUser) return;
             router.push('/');
-        }
-        catch(error:any){
+        }catch(error:any){
             alert(error.message);
         }
-    };
-
+    }
+        
     useEffect(() => {
         if(error) alert(error.message);
     },[error]);
@@ -77,11 +78,14 @@ const Signup:React.FC<SignupProps> = () => {
     </div>
 
     <button type="submit" className='w-full text-white focus:ring-blue-300 font-medium rounded-lg
-    text-sm px-5 py-2.5 text-center bg-brand-orange hover:bg-brand-orange-s'>Register</button>
+    text-sm px-5 py-2.5 text-center bg-brand-orange hover:bg-brand-orange-s'>
+        {loading ? 'Registering...' : 'Register'}
+    </button>
     <div className='text-sm font-medium text-gray-300'>
         Already have account? <a href="#" className='text-blue-700 hover:underline' onClick={handleClick}>Log in</a>
     </div>
     </form>
     );
 }
+
 export default Signup;
