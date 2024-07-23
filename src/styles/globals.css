@@ -15,7 +15,7 @@ body {
 	height: 100vh;
 }
 
-@layer components {
+@layer components{
 	.preferenceBtn {
 		@apply relative rounded px-3 py-1.5 font-medium items-center transition-all focus:outline-none inline-flex  ml-auto p-1 mr-2 hover:bg-dark-fill-3;
 	}

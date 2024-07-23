@@ -36,8 +36,8 @@ useEffect(() => {
     return <div>
         {showTimer ?(
             <div className='flex items-center space-x-2 bg-dark-fill-3 p-1.5 cursor-pointer rounded hover:bg-dark-fill-2'>
-                <div>{formatTime(time)}</div>
-                <FiRefreshCcw onClick={() => {
+                <div className='text-brand-orange' >{formatTime(time)}</div>
+                <FiRefreshCcw className='text-brand-orange' onClick={() => {
                     setShowTimer(false)
                     setTime(0)
                 }}/>
@@ -50,7 +50,7 @@ useEffect(() => {
                     viewBox='0 0 24 24'
                     width='1em'
                     height='1em'
-                    fill='currentColor'
+                    fill='rgb(255 161 22)'
                     className='h-6 w-6'
                 >
                     <path
