@@ -11,10 +11,6 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "bg-color": "rgb(8, 8, 8)",
-        "second-bg-color": "rgb(19, 19, 19)",
-        "text-color":  "rgb(255,255,255)",
-        "main-color": "rgb(0, 255, 140)",
         "dark-layer-1": "rgb(40,40,40)",
 				"dark-layer-2": "rgb(26,26,26)",
 				"dark-label-2": "rgba(239, 241, 246, 0.75)",
