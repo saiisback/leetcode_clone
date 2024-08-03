@@ -12,7 +12,7 @@ export const problems: Problem[] = [
 		id: "two-sum",
 		title: "Two Sum",
 		difficulty: "Easy",
-		category: "Array",
+		category: "Javascript",
 		order: 1,
 		Points:"200",
 	},
