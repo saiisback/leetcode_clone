@@ -10,7 +10,6 @@ export type Example = {
 export type Problem = {
 	id: string;
 	title: string;
-	points: string;
 	problemStatement: string;
 	examples: Example[];
 	constraints: string;
@@ -25,6 +24,9 @@ export type DBProblem = {
 	title: string;
 	category: string;
 	difficulty: string;
+	likes: number;
+	dislikes: number;
 	order: number;
-	points: string;
+	videoId?: string;
+	link?: string;
 };

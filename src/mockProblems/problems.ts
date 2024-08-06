@@ -4,7 +4,7 @@ export type Problem = {
 	difficulty: string;
 	category: string;
 	order: number;
-	Points: string;
+	videoId?: string;
 };
 
 export const problems: Problem[] = [
@@ -12,9 +12,9 @@ export const problems: Problem[] = [
 		id: "two-sum",
 		title: "Two Sum",
 		difficulty: "Easy",
-		category: "Javascript",
+		category: "Array",
 		order: 1,
-		Points:"200",
+		videoId: "8-k1C6ehKuw",
 	},
 	{
 		id: "reverse-linked-list",
@@ -22,7 +22,7 @@ export const problems: Problem[] = [
 		difficulty: "Hard",
 		category: "Linked List",
 		order: 2,
-		Points: "1000",
+		videoId: "",
 	},
 	{
 		id: "jump-game",
@@ -30,7 +30,7 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Dynamic Programming",
 		order: 3,
-		Points: "400",
+		videoId: "",
 	},
 	{
 		id: "valid-parentheses",
@@ -38,7 +38,7 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Stack",
 		order: 4,
-		Points: "200",
+		videoId: "xty7fr-k0TU",
 	},
 	{
 		id: "search-a-2d-matrix",
@@ -46,7 +46,7 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Binary Search",
 		order: 5,
-		Points: "400",
+		videoId: "ZfFl4torNg4",
 	},
 	{
 		id: "container-with-most-water",
@@ -54,7 +54,7 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Two Pointers",
 		order: 6,
-		Points: "400",
+		videoId: "",
 	},
 	{
 		id: "merge-intervals",
@@ -62,7 +62,7 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "intervals",
 		order: 7,
-		Points: "400",
+		videoId: "",
 	},
 	{
 		id: "maximum-depth-of-binary-tree",
@@ -70,7 +70,7 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Tree",
 		order: 8,
-		Points: "200",
+		videoId: "4qYTqOiRMoM",
 	},
 	{
 		id: "best-time-to-buy-and-sell-stock",
@@ -78,7 +78,7 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Array",
 		order: 9,
-		Points: "200",
+		videoId: "",
 	},
 	{
 		id: "subsets",
@@ -86,6 +86,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Backtracking",
 		order: 10,
-		Points: "400",
+		videoId: "",
 	},
 ];

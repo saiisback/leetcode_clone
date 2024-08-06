@@ -15,7 +15,7 @@ body {
 	height: 100vh;
 }
 
-@layer components{
+@layer components {
 	.preferenceBtn {
 		@apply relative rounded px-3 py-1.5 font-medium items-center transition-all focus:outline-none inline-flex  ml-auto p-1 mr-2 hover:bg-dark-fill-3;
 	}
@@ -59,7 +59,7 @@ body {
 	background-position: 50%;
 }
 .gutter:hover {
-	background-color: rgb(255 161 22);
+	background-color: #0a84ff;
 }
 
 .gutter.gutter-horizontal {

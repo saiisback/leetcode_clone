@@ -1,46 +1,39 @@
 {
-  "name": "leetcode_clone",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@codemirror/lang-cpp": "^6.0.2",
-    "@codemirror/lang-java": "^6.0.1",
-    "@codemirror/lang-javascript": "^6.2.2",
-    "@codemirror/lang-php": "^6.0.1",
-    "@codemirror/lang-python": "^6.1.6",
-    "@codemirror/lang-sql": "^6.7.0",
-    "@react-three/fiber": "^8.16.8",
-    "@replit/codemirror-lang-csharp": "^6.2.0",
-    "@types/three": "^0.166.0",
-    "@uiw/codemirror-theme-vscode": "^4.23.0",
-    "@uiw/react-codemirror": "^4.23.0",
-    "assert": "^2.1.0",
-    "firebase": "^10.12.4",
-    "framer-motion": "^11.3.8",
-    "next": "14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-firebase-hooks": "^5.1.1",
-    "react-icons": "^5.2.1",
-    "react-split": "^2.0.14",
-    "react-toastify": "^10.0.5",
-    "recoil": "^0.7.7"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.6",
-    "typescript": "^5"
-  }
+	"name": "leetcode-yt",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@codemirror/lang-javascript": "^6.1.6",
+		"@types/node": "18.15.3",
+		"@types/react": "18.0.28",
+		"@types/react-dom": "18.0.11",
+		"@uiw/codemirror-theme-vscode": "^4.19.16",
+		"@uiw/react-codemirror": "^4.19.16",
+		"assert": "^2.0.0",
+		"eslint": "8.36.0",
+		"eslint-config-next": "13.2.4",
+		"firebase": "^9.18.0",
+		"next": "13.2.4",
+		"react": "18.2.0",
+		"react-confetti": "^6.1.0",
+		"react-dom": "18.2.0",
+		"react-firebase-hooks": "^5.1.1",
+		"react-icons": "^4.8.0",
+		"react-split": "^2.0.14",
+		"react-toastify": "^9.1.2",
+		"react-youtube": "^10.1.0",
+		"recoil": "^0.7.7",
+		"typescript": "5.0.2"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.7"
+	}
 }
